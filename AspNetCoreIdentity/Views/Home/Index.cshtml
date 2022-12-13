@@ -1,0 +1,19 @@
+﻿
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h1>Index</h1>
+
+
+@if (TempData["Success"] != null)
+{
+    <div class="alert">
+        <div class="alert-success">
+            @TempData["Success"].ToString()
+        </div>
+    </div>
+}
+
+

@@ -1,0 +1,24 @@
+﻿@model AspNetCoreIdentity.ViewModels.LoginModel
+@{
+    ViewData["Title"] = "Login";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h1>Login</h1>
+
+<form asp-action="Login" asp-controller="Accounts" method="post">
+    <input type="hidden" name="returnUrl" />
+
+
+
+    <label>Email</label>
+    <input type="email" asp-for="Email" />
+
+
+    <label>Password</label>
+    <input type="password" asp-for="Password" />
+
+
+    <input type="submit" value="Login" />
+</form>
+

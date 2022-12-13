@@ -1,0 +1,16 @@
+﻿@model AspNetCoreIdentity.ViewModels.TwoFAuthModel
+@{
+    ViewData["Title"] = "TwoFactor";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h1>TwoFactor</h1>
+
+<form asp-action="TwoFactor" asp-controller="Accounts" method="post">
+
+    <label>Apply the Code</label>
+    <input type="text" asp-for="Token" />
+
+
+    <input type="submit" value="Complete the login" />
+</form>

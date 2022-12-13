@@ -1,0 +1,12 @@
+﻿
+@{
+    ViewData["Title"] = "SecureContent";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h1>SecureContent</h1>
+
+@if (User.Identity.IsAuthenticated)
+{
+    <h1>@User.Identity.Name</h1>
+}
